@@ -1,4 +1,4 @@
-import numpy as np
+﻿import numpy as np
 import scipy.sparse.linalg as sp
 import itertools
 from mayavi import mlab	#scientific visualization library
@@ -146,14 +146,6 @@ for i in range(6):
 
 # homogenized stiffness
 homStiffness = np.zeros([6, 6])
-
-
-X, Y, Z = np.mgrid[0:1:N*1j, 0:1:N*1j, 0:1:N*1j]
-mlab.points3d(X, Y, Z, eps[0][0][0], color=(0.86, 0.24, 0.22), scale_factor=0.1, mode='cube')
-mlab.scalarbar(title="strain", orientation='vertical')
-mlab.outline(color=(0.24, 0.56, 0.71), line_width=2.7)
-mlab.show()
-
 
 # homogenization operation <f> = 1/N Σ f_i
 for i in range(6):
