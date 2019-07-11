@@ -1,4 +1,4 @@
-# FFT-Homogenization
+# FFT-based Homogenization
 
 ![githubFFT](https://user-images.githubusercontent.com/52761240/61006553-e7a93e00-a36a-11e9-8db7-56725e06e296.png)
 
